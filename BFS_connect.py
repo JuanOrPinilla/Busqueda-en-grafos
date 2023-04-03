@@ -27,6 +27,7 @@ def BFS_connect(AdjList:dict, Node1:int,Node2:int)-> bool:
     queue = [Node1]
     #repetir hasta que se acabe la cola
     while queue:
+        #obtiene el elemento en la posición cero de la cola
         nodo_actual = queue.pop(0)
         #paso 4: actualizar el boolean del nodo actual a True (es visitado)
         visitado[nodo_actual] = True

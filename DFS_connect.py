@@ -19,14 +19,18 @@ Resultado: False
 def DFS_connect(AdjList:dict, Node1:int,Node2:int)-> bool:
     llaves = list(AdjList.keys())
     visitado = {}
+    #Inicializar un diccionario que tiene como llaves los nodos y el valor False (el boolean indicará si está conectado o no) 
     for element in llaves:
         visitado[element] = False
+    #llama a la recursión del DFS_connect
     DFS_recursion(AdjList,Node1,visitado)
     return visitado[Node2]
 
 def DFS_recursion(AdjList,Node1,visitado):
+    #marca el nodo como visitado
     visitado[Node1] = True
     for vecino in AdjList[Node1]:
+        #si el nodo adyacente no está marcado hace la recursión con dicho nodo
         if visitado[vecino] == False:
             DFS_recursion(AdjList,vecino,visitado)
 
