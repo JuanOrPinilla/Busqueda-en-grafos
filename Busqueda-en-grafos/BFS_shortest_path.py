@@ -50,4 +50,4 @@ def BFS_shortest_path(AdjList:dict, Node1:int, Node2:int):
     #si nunca se alcanza el nodo de llegada se asume que no hay un camino existente entre Node 1 y Node 2
     return "No hay camino"
 
-print(BFS_shortest_path({1:[2,3,4],2:[1],3:[1,4],4:[3,1]},2,4))
+print(BFS_shortest_path({1:[2,3,4],2:[1],3:[1,4],4:[3,1]},3,4))
