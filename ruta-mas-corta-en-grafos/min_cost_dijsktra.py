@@ -9,12 +9,16 @@ Fecha de creación: 4 de abril de 2023
 
 """
 este algoritmo "implementa dijkstra" para saber el costo del camino más corto a cada uno de los nodos 
+
 lista de adyacencia = {1:[[2,7],[3,3]], 2:[[4,2]], 3:[[2,2],[4,8]], 4:[]}
 Resultado: {1: 0, 3: 3, 2: 5, 4: 7}
+
 lista de adyacencia = {1:[[2,4],[3,2]], 2:[[4,5]], 3:[[2,1],[4,8],[5,10]], 4:[[5,2],[6,6]],5:[[6,2]],6:[]}
 Resultado: {1: 0, 3: 2, 2: 3, 4: 8, 5: 10, 6: 12}
+
 lista de adyacencia = {1:[[2,7],[3,3]], 2:[[3,1],[4,2]], 3:[[2,-10],[4,8]], 4:[]}
 Resultado: no hay resultado se queda en bucle por un ciclo infinito (pesos negativos)
+
 El resultado anterior es un diccionario que tiene cada nodo como llave y el valor es una tupla
 donde el valor es el costo minimo para acceder. Es decir, el camino más corto para llegar a 4 es 7
 Un problema de esta implementación es que solo muestra el costo minimo más no el camino para llegar al nodo

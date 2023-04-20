@@ -41,10 +41,10 @@ def floydWarshall(adjMatriz):
                         adjMatriz[j][k] = costo
     for i in range(len(adjMatriz[0])):
         if adjMatriz[i][i] < 0:
-            return False,adjMatriz
+            return False
     return True,adjMatriz
 
 #adjMatriz = [[0,None,8,2],[2,0,4,1],[None,None,0,3],[None,None,3,0]]
 #adjMatriz = [[0,4,8,None,None],[4,0,1,2,None],[8,None,0,4,2],[None,2,4,0,7],[None,None,2,7,0]]
-adjMatriz = [[0,-2,8,None,None],[-2,0,1,2,None],[8,None,0,4,2],[None,2,4,0,7],[None,None,2,7,0]]     
+adjMatriz = [[0,-2,8,None,None],[-2,0,1,2,None],[8,None,0,4,2],[None,2,4,0,7],[None,None,2,7,0]]  
 print(floydWarshall(adjMatriz))
