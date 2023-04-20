@@ -1,6 +1,6 @@
 """
 Este archivo fue creado por Juan Orduz.
-Fecha de creación: 12 de marzo de 2023
+Fecha de creación: 12 de abril de 2023
 """
 ########################################################
 ###                 Floyd-Warshall                   ###
